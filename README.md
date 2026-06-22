@@ -1,6 +1,6 @@
-# J.A.R.V.I.S. — AI Voice Agent
+# J.A.R.V.I.S.S. — AI Voice Agent
 
-> **J**ust **A** **R**ather **V**ery **I**ntelligent **S**ystem
+> **J**ust **A** **R**ather **V**ery **I**ntelligent (**S**panish) **S**ystem
 
 An AI-powered voice assistant inspired by Iron Man's J.A.R.V.I.S. This application combines speech recognition, Google Gemini AI, text-to-speech, and browser automation into a single conversational agent that can talk to you, answer questions, and perform actions on your computer.
 
