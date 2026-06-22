@@ -1,0 +1,39 @@
+# ── OS Files ────────────────────────────────────
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ── Environment Variables ──────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Python ──────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# ── IDE / Editor ────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# ── Logs ────────────────────────────────────────
+*.log
+
+# ── Runtime ──────────────────────────────────────
+.python-version

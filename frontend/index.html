@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J.A.R.V.I.S. — Intelligent Voice Assistant</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="corner-decoration tl"></div>
+<div class="corner-decoration tr"></div>
+<div class="corner-decoration bl"></div>
+<div class="corner-decoration br"></div>
+<div class="scanline"></div>
+<canvas id="particle-canvas"></canvas>
+<div class="grid-overlay"></div>
+<div class="ambient-glow"></div>
+
+<div class="app">
+  <header>
+    <div class="logo">
+      <div class="logo-icon">J</div>
+      <div class="logo-text">J.A.R.V.I.S <span>// AI</span></div>
+    </div>
+    <div class="header-status">
+      <span class="status-dot idle" id="statusDot"></span>
+      <span id="statusLabel">STANDBY</span>
+      <span class="lang-badge" id="langBadge">EN // ES</span>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="visualizer-container">
+      <div class="arc-reactor"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="viz-bars" id="vizBars"></div>
+      <div class="center-info">
+        <div class="status-text" id="centerStatus">INITIALIZING</div>
+        <div class="lang-display" id="centerLang">—</div>
+      </div>
+    </div>
+
+    <div class="conversation-area" id="conversationArea">
+      <div class="message jarvis">
+        <div class="msg-label">J.A.R.V.I.S</div>
+        <div class="msg-text">Good evening, sir. I'm online and ready. Press and hold the button to speak, or type your message below — I understand both English and Spanish.</div>
+      </div>
+    </div>
+
+    <div class="typing-indicator" id="typingIndicator">
+      <div class="typing-dot"></div>
+      <div class="typing-dot"></div>
+      <div class="typing-dot"></div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="auto" id="langAuto">🌐 Auto</button>
+      <button class="lang-btn" data-lang="en" id="langEn">🇬🇧 EN</button>
+      <button class="lang-btn" data-lang="es" id="langEs">🇪🇸 ES</button>
+    </div>
+
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." autocomplete="off">
+      <button class="chat-send-btn" id="chatSendBtn">Send</button>
+    </div>
+
+    <button class="ptt-button" id="pttButton" title="Hold to talk">
+      🎤
+      <div class="btn-ripple"></div>
+    </button>
+
+    <div style="text-align:center; min-width:80px;">
+      <span class="control-label" id="controlLabel">HOLD TO SPEAK</span>
+    </div>
+
+    <select class="voice-selector" id="voiceSelect" title="Select TTS voice">
+      <option value="">Loading voices...</option>
+    </select>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
