@@ -67,8 +67,8 @@ J.A.R.V.I.S. can perform actions on your computer when you ask. Just say:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/LakshaySoin/CS61BL.git
-cd CS61BL
+git@github.com:LakshaySoin/JARVISS.git
+cd JARVISS
 ```
 
 ### 2. Get a Gemini API key
@@ -235,7 +235,7 @@ uvicorn backend.main:app --reload --port 8080
 
 ## 📄 License
 
-This project is for educational and personal use. The J.A.R.V.I.S. name and concept are the property of Marvel Comics / Disney.
+This project is for educational and personal use. The J.A.R.V.I.S.S. name and concept are the property of Marvel Comics / Disney.
 
 ---
 
